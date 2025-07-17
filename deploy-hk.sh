@@ -182,7 +182,7 @@ install_nodejs() {
 
     # 配置npm - 适配香港网络
     npm config set registry https://registry.npmmirror.com
-    npm config set timeout 300000
+    npm config set fetch-timeout 600000
     npm config set maxsockets 10
 
     # 验证安装
@@ -271,7 +271,7 @@ deploy_application() {
     if [ -f "package.json" ]; then
         # 使用香港镜像源加速
         npm config set registry https://registry.npmmirror.com
-        npm install --production=false --timeout=300000
+        npm install --production=false --fetch-timeout=600000
     else
         error "package.json not found"
         return 1
