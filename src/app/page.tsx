@@ -1,3 +1,5 @@
+'use client';
+import dynamic from 'next/dynamic';
 import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import DownloadHero from '@/components/DownloadHero';
