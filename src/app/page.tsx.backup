@@ -1,4 +1,6 @@
 'use client';
+import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import DownloadHero from '@/components/DownloadHero';
 import CryptoGrid from '@/components/CryptoGrid';
@@ -8,10 +10,13 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import TokenList from '@/components/TokenList';
 import BottomBar from '@/components/BottomBar';
 
+const SoundEffects = dynamic(() => import('@/components/SoundEffects'), { ssr: false });
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0c0e0e] text-white">
+      {/* Sound Effects */}
+      <SoundEffects />
       {/* Header */}
       <Header />
       {/* Main Content */}
