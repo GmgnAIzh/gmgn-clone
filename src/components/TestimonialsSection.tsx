@@ -3,11 +3,9 @@
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Star, MessageSquare, ExternalLink } from 'lucide-react';
-import { useSound } from '@/context/SoundContext';
 
 export default function TestimonialsSection() {
   const t = useTranslations();
-  const { playClick, playHover } = useSound();
 
   const testimonials = [
     {
@@ -55,8 +53,6 @@ export default function TestimonialsSection() {
             <div
               key={index}
               className="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-[#beeb26] transition-all duration-300 transform hover:scale-105 cursor-pointer"
-              onMouseEnter={playHover}
-              onClick={playClick}
             >
               {/* User info */}
               <div className="flex items-center space-x-3 mb-4">
@@ -94,10 +90,8 @@ export default function TestimonialsSection() {
                 variant="ghost"
                 size="sm"
                 className="text-[#beeb26] hover:text-white hover:bg-gray-700 p-0 h-auto"
-                onMouseEnter={playHover}
                 onClick={(e) => {
                   e.stopPropagation();
-                  playClick();
                   window.open(testimonial.link, '_blank');
                 }}
               >
@@ -121,8 +115,6 @@ export default function TestimonialsSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 className="bg-black hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300"
-                onMouseEnter={playHover}
-                onClick={playClick}
               >
                 📱 {t('buttons.downloadFromAppStore')}
               </Button>
@@ -130,8 +122,6 @@ export default function TestimonialsSection() {
               <Button
                 variant="outline"
                 className="border-black text-black hover:bg-black hover:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300"
-                onMouseEnter={playHover}
-                onClick={playClick}
               >
                 📱 {t('buttons.telegramGroup')}
               </Button>

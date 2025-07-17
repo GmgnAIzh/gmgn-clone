@@ -10,11 +10,9 @@ import {
   PiggyBank,
   DollarSign
 } from 'lucide-react';
-import { useSound } from '@/context/SoundContext';
 
 export default function BottomBar() {
   const t = useTranslations();
-  const { playClick, playHover } = useSound();
 
   const tools = [
     { icon: TrendingUp, label: t('buttons.trending'), active: true },
@@ -43,8 +41,6 @@ export default function BottomBar() {
                     ? "bg-green-600 hover:bg-green-700 text-white"
                     : "text-gray-400 hover:text-white hover:bg-gray-800"
                 }`}
-                onMouseEnter={playHover}
-                onClick={playClick}
               >
                 <Icon className="h-4 w-4" />
                 <span className="text-sm">{tool.label}</span>

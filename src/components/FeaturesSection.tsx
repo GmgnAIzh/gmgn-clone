@@ -3,11 +3,9 @@
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Bell, TrendingUp, Settings, DollarSign, Eye, Target } from 'lucide-react';
-import { useSound } from '@/context/SoundContext';
 
 export default function FeaturesSection() {
   const t = useTranslations();
-  const { playClick, playHover } = useSound();
 
   const features = [
     {
@@ -69,8 +67,6 @@ export default function FeaturesSection() {
                   <Button
                     variant="outline"
                     className="border-[#beeb26] text-[#beeb26] hover:bg-[#beeb26] hover:text-black transition-all duration-300"
-                    onMouseEnter={playHover}
-                    onClick={playClick}
                   >
                     {t('features.learnMore')}
                   </Button>
@@ -105,8 +101,6 @@ export default function FeaturesSection() {
             </p>
             <Button
               className="bg-[#beeb26] hover:bg-[#a5d423] text-black font-bold text-lg px-12 py-6 rounded-2xl transition-all duration-300 transform hover:scale-105"
-              onMouseEnter={playHover}
-              onClick={playClick}
             >
               <Settings className="mr-3 h-5 w-5" />
               {t('features.downloadNow')}

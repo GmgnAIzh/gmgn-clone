@@ -4,14 +4,11 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Download, Apple, Monitor } from 'lucide-react';
 import SimpleChart from '@/components/SimpleChart';
-import { useSound } from '@/context/SoundContext';
 
 export default function DownloadHero() {
   const t = useTranslations();
-  const { playClick, playHover, playSuccess } = useSound();
 
   const handleDownload = () => {
-    playSuccess();
     // 在实际项目中，这里会是真实的下载链接
     window.open('#', '_blank');
   };
@@ -41,7 +38,6 @@ export default function DownloadHero() {
         <div className="mb-16">
           <Button
             onClick={handleDownload}
-            onMouseEnter={playHover}
             className="bg-[#beeb26] hover:bg-[#a5d423] text-black font-bold text-lg px-12 py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Apple className="mr-3 h-6 w-6" />

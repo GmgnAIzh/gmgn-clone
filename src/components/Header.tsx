@@ -11,11 +11,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 export default function Header() {
-  const [soundEnabled, setSoundEnabled] = useState(true);
   const [currentLocale, setCurrentLocale] = useState('zh');
 
-  const toggleSound = () => {
-    setSoundEnabled(!soundEnabled);
   };
 
   const toggleLanguage = () => {
@@ -87,8 +84,6 @@ export default function Header() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-gray-800 border-gray-700">
-                <DropdownMenuItem onClick={toggleSound} className="text-white hover:bg-gray-700">
-                  {soundEnabled ? (
                     <>
                       <Volume2 className="h-4 w-4 mr-2" />
                       关闭声音

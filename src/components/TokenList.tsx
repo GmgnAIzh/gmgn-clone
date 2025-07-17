@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { TrendingUp, TrendingDown, Star, Filter, Eye } from 'lucide-react';
-import { useSound } from '@/context/SoundContext';
 
 interface Token {
   name: string;
@@ -71,7 +70,6 @@ const mockTokens: Token[] = [
 
 export default function TokenList() {
   const t = useTranslations();
-  const { playClick, playHover } = useSound();
 
   return (
     <div className="flex-1 p-6">
@@ -86,8 +84,6 @@ export default function TokenList() {
             variant="ghost"
             size="sm"
             className="text-gray-400 hover:text-white"
-            onMouseEnter={playHover}
-            onClick={playClick}
           >
             <Filter className="mr-2 h-4 w-4" />
             {t('buttons.filter')}
@@ -96,8 +92,6 @@ export default function TokenList() {
             variant="ghost"
             size="sm"
             className="text-gray-400 hover:text-white"
-            onMouseEnter={playHover}
-            onClick={playClick}
           >
             <Eye className="mr-2 h-4 w-4" />
             {t('buttons.customize')}
@@ -127,8 +121,6 @@ export default function TokenList() {
           <div
             key={index}
             className="grid grid-cols-7 gap-4 p-4 border-b border-gray-800 hover:bg-gray-800 transition-colors cursor-pointer"
-            onMouseEnter={playHover}
-            onClick={playClick}
           >
             {/* Token */}
             <div className="flex items-center space-x-3">
@@ -168,10 +160,8 @@ export default function TokenList() {
               <Button
                 size="sm"
                 className="bg-green-600 hover:bg-green-700 text-white text-xs"
-                onMouseEnter={playHover}
                 onClick={(e) => {
                   e.stopPropagation();
-                  playClick();
                 }}
               >
                 Buy
@@ -180,10 +170,8 @@ export default function TokenList() {
                 size="sm"
                 variant="outline"
                 className="border-gray-600 text-gray-300 hover:text-white hover:bg-gray-700 text-xs"
-                onMouseEnter={playHover}
                 onClick={(e) => {
                   e.stopPropagation();
-                  playClick();
                 }}
               >
                 Track
