@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import DownloadHero from '@/components/DownloadHero';
 import CryptoGrid from '@/components/CryptoGrid';
@@ -6,25 +7,22 @@ import FeaturesSection from '@/components/FeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import TokenList from '@/components/TokenList';
 import BottomBar from '@/components/BottomBar';
-import SoundEffects from '@/components/SoundEffects';
+
+const SoundEffects = dynamic(() => import('@/components/SoundEffects'), { ssr: false });
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0c0e0e] text-white">
       {/* Sound Effects */}
       <SoundEffects />
-
       {/* Header */}
       <Header />
-
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
         <DownloadHero />
-
         {/* Real-time Crypto Prices */}
         <CryptoGrid />
-
         {/* Interactive Chart Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-[#0c0e0e]">
           <div className="max-w-6xl mx-auto">
@@ -36,13 +34,11 @@ export default function Home() {
                 专业级交易图表，实时数据更新，支持多种技术指标
               </p>
             </div>
-
             <div className="bg-gray-800 rounded-2xl p-6 border border-gray-700">
               <SimpleChart />
             </div>
           </div>
         </section>
-
         {/* Token List Section */}
         <section className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
@@ -54,17 +50,13 @@ export default function Home() {
                 实时追踪热门代币，发现下一个潜力项目
               </p>
             </div>
-
             <TokenList />
           </div>
         </section>
-
         {/* Features Section */}
         <FeaturesSection />
-
         {/* Testimonials */}
         <TestimonialsSection />
-
         {/* Final CTA */}
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -87,10 +79,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-
       {/* Bottom Navigation */}
       <BottomBar />
-
       {/* Footer */}
       <footer className="bg-[#0c0e0e] border-t border-gray-800 py-12">
         <div className="max-w-7xl mx-auto px-4">
@@ -106,7 +96,6 @@ export default function Home() {
                 跟踪聪明资金和KOL，发现未来热门资产，让GMGN带你先行一步！
               </p>
             </div>
-
             <div>
               <h3 className="text-white font-semibold mb-4">产品</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -116,7 +105,6 @@ export default function Home() {
                 <li><a href="#" className="hover:text-white transition-colors">开发者工具</a></li>
               </ul>
             </div>
-
             <div>
               <h3 className="text-white font-semibold mb-4">资源</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -126,7 +114,6 @@ export default function Home() {
                 <li><a href="#" className="hover:text-white transition-colors">社区</a></li>
               </ul>
             </div>
-
             <div>
               <h3 className="text-white font-semibold mb-4">联系我们</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
@@ -137,7 +124,6 @@ export default function Home() {
               </ul>
             </div>
           </div>
-
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © 2025 GMGN Trading Platform - 快速交易，快速跟单
