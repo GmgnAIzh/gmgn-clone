@@ -1,0 +1,93 @@
+{
+    "server_info": {
+        "provider": "香港云",
+        "region": "Hong Kong",
+        "ip_address": "45.194.37.150",
+        "zone": "HK-CLS0"
+    },
+    "system": {
+        "os_name": "Ubuntu",
+        "os_version": "24.04",
+        "cpu_cores": 4,
+        "cpu_type": "vCPU",
+        "total_memory": 4096,
+        "estimated_available_memory": 3500,
+        "disk_total": "50GB",
+        "disk_type": "SSD",
+        "bandwidth": "5Mbps",
+        "public_ip": "45.194.37.150"
+    },
+    "project": {
+        "name": "gmgn-app",
+        "deploy_path": "/home/project/gmgn-clone",
+        "run_user": "root",
+        "app_port": 3000
+    },
+    "domain": {
+        "use_domain": "n",
+        "domain_name": "45.194.37.150",
+        "admin_email": "admin@example.com",
+        "use_ssl": "n"
+    },
+    "performance": {
+        "pm2_instances": 3,
+        "node_heap_size": 1536,
+        "max_memory_restart": "1.5G",
+        "cluster_mode": true,
+        "cpu_utilization_target": 75
+    },
+    "monitoring": {
+        "health_check_interval": 5,
+        "memory_threshold": 80,
+        "cpu_threshold": 85,
+        "disk_threshold": 85,
+        "alert_email": "admin@example.com",
+        "log_retention_days": 7
+    },
+    "backup": {
+        "retention_days": 5,
+        "backup_dir": "/home/project/backups",
+        "max_backup_size": "10GB"
+    },
+    "network_optimization": {
+        "gzip_compression": true,
+        "brotli_compression": true,
+        "cache_static_files": true,
+        "keepalive_timeout": 30,
+        "connection_limit": 1000,
+        "rate_limit": "50r/s",
+        "max_request_size": "10M"
+    },
+    "hongkong_optimization": {
+        "timezone": "Asia/Hong_Kong",
+        "locale": "zh_HK.UTF-8",
+        "dns_servers": ["8.8.8.8", "1.1.1.1", "119.29.29.29"],
+        "ntp_servers": ["ntp.aliyun.com", "time.cloudflare.com"],
+        "bandwidth_optimization": {
+            "enable_tcp_bbr": true,
+            "tcp_congestion_control": "bbr",
+            "tcp_window_scaling": true,
+            "tcp_fast_open": true
+        }
+    },
+    "security": {
+        "ssh_port": 22,
+        "disable_root_ssh": false,
+        "fail2ban": true,
+        "ufw_firewall": true,
+        "auto_updates": true,
+        "log_monitoring": true
+    },
+    "template_applied": "medium_server_hk_optimized",
+    "generated_at": "2025-01-17T17:50:00+08:00",
+    "optimizations": [
+        "4核CPU集群模式优化",
+        "4GB内存合理分配",
+        "香港地域网络优化",
+        "5Mbps带宽传输优化",
+        "50GB存储空间规划",
+        "TCP BBR拥塞控制",
+        "Gzip/Brotli双重压缩",
+        "静态资源长期缓存"
+    ]
+}

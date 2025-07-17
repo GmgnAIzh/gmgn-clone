@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "trenches": "战壕",
+    "newPair": "新配对",
+    "trending": "热门",
+    "xStock": "X股票"
+  },
+  "buttons": {
+    "cooking": "烹饪",
+    "signUp": "注册",
+    "logIn": "登录",
+    "download": "下载应用",
+    "filter": "筛选",
+    "customize": "自定义",
+    "search": "搜索",
+    "wallet": "钱包跟踪器",
+    "holding": "持仓",
+    "watchlist": "观察列表",
+    "trending": "趋势",
+    "tracker": "追踪器",
+    "downloadFromAppStore": "从App Store下载",
+    "learnMore": "了解更多",
+    "downloadNow": "立即下载",
+    "viewTweet": "查看推文",
+    "joinNow": "立即加入",
+    "telegramGroup": "Telegram群组",
+    "buy": "买入",
+    "sell": "卖出"
+  },
+  "hero": {
+    "discoverFaster": "更快发现",
+    "tradingInSeconds": "秒级交易",
+    "description": "跟踪聪明资金和KOL，发现未来热门资产，让GMGN带你先行一步！"
+  },
+  "features": {
+    "realTimeAlerts": "实时提醒与零延迟通知",
+    "realTimeAlertsDesc": "通过即时买卖提醒保持更新，做出更明智、更快速的交易决策。",
+    "realTimeTrading": "实时交易与即时链上数据",
+    "realTimeTradingDesc": "通过实时K线趋势和持有者洞察保持领先，优化您的策略！",
+    "trackSmartMoney": "跟踪聪明资金：自动买卖",
+    "trackSmartMoneyDesc": "通过毫不费力地跟踪专家和聪明资金，提升您的收益！",
+    "walletAnalysis": "钱包分析：一目了然的盈亏",
+    "walletAnalysisDesc": "获取实时7天/30天盈亏、胜率和代币活动洞察，提升您的交易策略！",
+    "learnMore": "了解更多",
+    "ctaTitle": "准备开始更智能的交易？",
+    "ctaDescription": "加入已经在使用GMGN发现和交易meme代币的数千名交易者行列。",
+    "downloadNow": "立即下载"
+  },
+  "testimonials": {
+    "title": "听听我们用户的声音",
+    "subtitle": "加入数千名信任GMGN满足交易需求的成功交易者行列",
+    "joinCommunity": "立即加入GMGN社区！",
+    "joinCommunityDesc": "下载应用，开始使用实时洞察进行更智能的交易",
+    "viewTweet": "查看推文"
+  },
+  "trading": {
+    "dashboard": "GMGN交易面板",
+    "liveActivity": "实时交易活动",
+    "buyEth": "买入ETH",
+    "sellSolana": "卖出全部SOLANA",
+    "buyCardano": "买入CARDANO",
+    "buyPolygon": "买入POLYGON",
+    "sellDogecoin": "卖出DOGECOIN",
+    "activeTraders": "活跃交易者",
+    "volume24h": "24小时成交量",
+    "profitMaster": "盈利大师",
+    "capitalGuru": "资本大师",
+    "investmentKing": "投资之王",
+    "smartTrader": "智能交易者",
+    "cryptoExpert": "加密专家",
+    "loading": "加载中...",
+    "selectCrypto": "选择加密货币",
+    "timeRange": "时间范围",
+    "dataSource": "数据来源",
+    "chartInstructions": "拖拽缩放 • 滚轮放大缩小 • 双击重置"
+  },
+  "quickFeatures": {
+    "realTimeAlerts": "实时提醒",
+    "realTimeAlertsDesc": "零延迟通知，实现更智能的交易",
+    "instantTrading": "即时交易",
+    "instantTradingDesc": "实时K线趋势和持有者洞察",
+    "smartMoney": "聪明资金",
+    "smartMoneyDesc": "跟踪专家，提升您的收益"
+  },
+  "header": {
+    "fastTrade": "快速交易，快速跟单，快速AFK自动化",
+    "followSmart": "跟随聪明资金和KOL，发现未来热门资产，让GMGN带你先行一步！",
+    "trackProfit": "跟踪聪明资金和KOL，发现未来热门资产，让GMGN带你先行一步！",
+    "discoverFaster": "更快发现",
+    "tradingInSeconds": "秒级交易"
+  },
+  "table": {
+    "token": "代币",
+    "price": "价格",
+    "change": "涨跌",
+    "volume": "成交量",
+    "marketCap": "市值",
+    "holders": "持有者"
+  },
+  "footer": {
+    "termsOfService": "服务条款",
+    "privacyPolicy": "隐私政策"
+  },
+  "settings": {
+    "language": "语言",
+    "sound": "音效",
+    "theme": "主题"
+  }
+}

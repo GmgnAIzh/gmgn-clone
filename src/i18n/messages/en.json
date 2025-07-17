@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "trenches": "Trenches",
+    "newPair": "New pair",
+    "trending": "Trending",
+    "xStock": "xStock"
+  },
+  "buttons": {
+    "cooking": "Cooking",
+    "signUp": "Sign Up",
+    "logIn": "Log In",
+    "download": "Download App",
+    "filter": "Filter",
+    "customize": "Customize",
+    "search": "Search",
+    "wallet": "Wallet Tracker",
+    "holding": "Holding",
+    "watchlist": "Watchlist",
+    "trending": "Trending",
+    "tracker": "Tracker",
+    "downloadFromAppStore": "Download from App Store",
+    "learnMore": "Learn More",
+    "downloadNow": "Download Now",
+    "viewTweet": "View Tweet",
+    "joinNow": "Join Now",
+    "telegramGroup": "Telegram Group",
+    "buy": "Buy",
+    "sell": "Sell"
+  },
+  "hero": {
+    "discoverFaster": "Discover faster",
+    "tradingInSeconds": "Trading in seconds",
+    "description": "Track the smart money and KOL, discover future hot assets, and let GMGN take you one step ahead!"
+  },
+  "features": {
+    "realTimeAlerts": "Real-Time Alerts & Zero-Delay Notifications",
+    "realTimeAlertsDesc": "Stay updated with instant buy/sell alerts for smarter and faster trading decisions.",
+    "realTimeTrading": "Real-Time Trading & Instant On-Chain Data",
+    "realTimeTradingDesc": "Stay ahead with live K-line trends and holder insights to optimize your strategy!",
+    "trackSmartMoney": "Track Smart Money: Auto Buy & Sell",
+    "trackSmartMoneyDesc": "Boost your returns by tracking experts and smart money effortlessly with GMGN!",
+    "walletAnalysis": "Wallet Analysis: Clear PnL at a Glance",
+    "walletAnalysisDesc": "Access real-time 7d/30d PnL, win rate, and token activity insights to enhance your trading strategies!",
+    "learnMore": "Learn More",
+    "ctaTitle": "Ready to Start Trading Smarter?",
+    "ctaDescription": "Join thousands of traders who are already using GMGN to discover and trade meme tokens faster than ever.",
+    "downloadNow": "Download Now"
+  },
+  "testimonials": {
+    "title": "Hear from our users",
+    "subtitle": "Join thousands of successful traders who trust GMGN for their trading needs",
+    "joinCommunity": "Join the GMGN Community Today!",
+    "joinCommunityDesc": "Download the app and start trading smarter with real-time insights",
+    "viewTweet": "View Tweet"
+  },
+  "trading": {
+    "dashboard": "GMGN Trading Dashboard",
+    "liveActivity": "Live Trading Activity",
+    "buyEth": "Buy ETH",
+    "sellSolana": "Sell All SOLANA",
+    "buyCardano": "Buy CARDANO",
+    "buyPolygon": "Buy POLYGON",
+    "sellDogecoin": "Sell DOGECOIN",
+    "activeTraders": "Active Traders",
+    "volume24h": "24h Volume",
+    "profitMaster": "Profit Master",
+    "capitalGuru": "Capital Guru",
+    "investmentKing": "Investment King",
+    "smartTrader": "Smart Trader",
+    "cryptoExpert": "Crypto Expert",
+    "loading": "Loading...",
+    "selectCrypto": "Select Cryptocurrency",
+    "timeRange": "Time Range",
+    "dataSource": "Data Source",
+    "chartInstructions": "Drag to zoom • Scroll to scale • Double click to reset"
+  },
+  "quickFeatures": {
+    "realTimeAlerts": "Real-Time Alerts",
+    "realTimeAlertsDesc": "Zero-delay notifications for smarter trading",
+    "instantTrading": "Instant Trading",
+    "instantTradingDesc": "Live K-line trends and holder insights",
+    "smartMoney": "Smart Money",
+    "smartMoneyDesc": "Track experts and boost your returns"
+  },
+  "header": {
+    "fastTrade": "Fast Trade, Fast Copy Trade, Fast AFK Automation",
+    "followSmart": "Follow the smart money and KOL, discover future hot assets, and let GMGN take you one step ahead!",
+    "trackProfit": "Track the smart money and KOL, discover future hot assets, and let GMGN take you one step ahead!",
+    "discoverFaster": "Discover faster",
+    "tradingInSeconds": "Trading in seconds"
+  },
+  "table": {
+    "token": "Token",
+    "price": "Price",
+    "change": "Change",
+    "volume": "Volume",
+    "marketCap": "Market Cap",
+    "holders": "Holders"
+  },
+  "footer": {
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "settings": {
+    "language": "Language",
+    "sound": "Sound",
+    "theme": "Theme"
+  }
+}
